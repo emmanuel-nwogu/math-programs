@@ -9,11 +9,14 @@ public class evenFibonacci {
         Scanner scan = new Scanner(System.in);
         System.out.println("What is the limit number?");
         int limit = Integer.valueOf(scan.nextLine());
+        
         ArrayList<Integer> fibonacci = new ArrayList<>();
         // initiating the fibonacci sequence
         fibonacci.add(0);
         fibonacci.add(1);
+        
         updateFib(fibonacci, limit);
+        
         // Here, i is first 3 because 2, the first even number, appears at index
         // 3 anf from then on, even numbers can be found after every two numbers
         // hence the i += 3.
